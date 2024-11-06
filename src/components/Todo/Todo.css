@@ -58,7 +58,7 @@ form input {
   outline: none;
   border-top-left-radius: 17px;
   border-bottom-left-radius: 17px;
-  max-width: 200px;
+  max-width: 100px;
   min-width: 400px;
   transition: background-color 200ms ease-in-out;
   width: 100%;
@@ -90,10 +90,11 @@ button {
 
 .todo-btn {
   padding: 10px 20px;
-  font-size: 19px;
+  font-size: 5rem;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   min-width: 100px;
+  max-width: 50px;
   background-color: #5dade2;
   color: var(--secondary-color);
 }
