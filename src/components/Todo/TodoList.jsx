@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { MdCheck, MdDeleteForever } from "react-icons/md";
+import { MdCheck, MdClear, MdDeleteForever } from "react-icons/md";
 
 const TodoList = ({ tasks, setTasks, handleCheckEvent}) => {
 
@@ -11,7 +11,6 @@ const TodoList = ({ tasks, setTasks, handleCheckEvent}) => {
         setTasks(newTasks);
     }
 
-
     return (
         <div className='myUnOrdList'>
             <ul className='todo-list'>
@@ -19,8 +18,8 @@ const TodoList = ({ tasks, setTasks, handleCheckEvent}) => {
                     tasks.map((list) =>
                         <li className='todo-item' key={list.id}>
                             <span className={`${list.checked ? 'checkList' : 'notCheckList'}`}>{list.task}</span>
-                            <button className="check-btn" onClick={() => handleCheck(list.id)}>
-                                <MdCheck />
+                            <button className={`${list.checked ? 'delete-btn' : 'check-btn'}`} onClick={() => handleCheck(list.id)}>
+                                {list.checked ? <MdClear /> : <MdCheck />}
                             </button>
                             <button className='delete-btn' onClick={() => handleDelete(list.id)}>
                                 <MdDeleteForever />
