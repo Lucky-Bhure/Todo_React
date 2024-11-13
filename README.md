@@ -31,18 +31,12 @@ A component that renders the list of tasks and provides individual buttons to ma
   - `setTasks`: Updates the task list in the `Todo` component.
   - `handleCheckEvent`: Toggles the checked status of each task.
 
-### `Data`
-Displays the current date and time, updated every second.
-
-- **State Management**: Uses `useState` to hold the current date and time.
-- **Effect**: Sets up an interval with `useEffect` to update the date and time every second.
-
 ## Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/react-todo-app.git
+   git clone https://github.com/Lucky-Bhure/Todo_React.git
 
 2. Navigate to the project directory:
 
